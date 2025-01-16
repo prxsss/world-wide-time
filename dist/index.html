@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>world-wide-time</title>
+
+    <script
+      src="https://kit.fontawesome.com/0907566a76.js"
+      crossorigin="anonymous"
+    ></script>
+  <script defer src="bundle619afd34a165c97d9680.js"></script></head>
+  <body>
+    <main>
+      <div class="clock-container">
+        <div class="timezone-box">
+          <p class="timezone">Europe/London</p>
+          <i
+            class="fa-regular fa-pen-to-square"
+            role="button"
+            data-icon="change-timezone"
+          ></i>
+        </div>
+        <p class="time">06:35:00</p>
+        <p class="date">Monday, 1 May, 2023</p>
+      </div>
+
+      <div id="modal-1" aria-hidden="true">
+        <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+          <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <div class="modal-container" id="modal-1-content">
+              <form class="change-timezone-form">
+                <label for="timezone-list">Change Timezone</label>
+                <select class="timezone-selection" id="timezone-list">
+                  <option disabled selected value="">Pick a timezone</option>
+                </select>
+                <button class="apply-btn" aria-label="Close modal">
+                  Apply
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+:root {
+    --ff-base: "Kode Mono", monospace;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --transition: all 1s linear;
+}
+
+/*
+    Josh's Custom CSS Reset
+    https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+html, 
+body {
+    height: 100%;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* general styles */
+body {
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    padding: 2rem;
+}
+
+/* project styles */
+main {
+    border: 4px solid black;
+    border-radius: 0.75rem;
+    height: 100%;
+    width: 100%;
+}
+
+.clock-container {
+    --margin-right: 1rem;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    width: 780px;
+}
+
+.timezone-box {
+    align-items: center;
+    align-self: end;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-right: var(--margin-right);
+}
+
+.timezone-box i:hover {
+    cursor: pointer;
+}
+
+.time {
+    font-size: 10rem;
+}
+
+.date {
+    align-self: end;
+    margin-right: var(--margin-right);
+}
+
+#modal-1 {
+    display: none;
+}
+
+#modal-1.is-open {
+    display: block;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+    background-color: #fff;
+    padding: 30px;
+    max-width: 600px;
+    max-height: 100vh;
+    border: 3px solid black;
+    border-radius: 4px;
+    overflow-y: auto;
+}
+
+.change-timezone-form {
+    font-size: 2rem;
+}
+
+.change-timezone-form label {
+    display: block;
+    font-weight: var(--fw-bold);
+    margin-bottom: 8px;
+}
+
+.change-timezone-form select {
+    font-size: 1.375rem;
+    padding: 6px;
+    width: 360px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.change-timezone-form select:focus {
+    outline: 0;
+}
+
+.change-timezone-form button {
+    font-weight: var(--fw-bold);
+    border: 0;
+    background-color: transparent;
+}
+
+.change-timezone-form button:hover {
+    cursor: pointer;
+}
