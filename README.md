@@ -1,5 +1,5 @@
 # World Wide Time
-A simple webpage that shows the current time of user.
+A simple webpage that shows the current time of the user and allows them to change the timezone.
 
 <p align="center"><img src="src/assets/gifs/main.gif" width="650" height="350"></p>
 
